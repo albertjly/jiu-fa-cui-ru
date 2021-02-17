@@ -1,0 +1,64 @@
+/************************Logo-Start**************************/
+#header .container .row {
+  height: 135px;
+}
+#header .container .row .header-left .logo-right .slogan {
+  color: #b93880;
+  font-weight: bolder;
+  font-size: 16px;
+}
+#header .container .row .header-right .left-QR,
+#header .container .row .header-right .right-QR {
+  width: 120px;
+  height: 140px;
+  text-align: center;
+}
+#header .container .row .header-right .left-QR img,
+#header .container .row .header-right .right-QR img {
+  height: 90px;
+}
+#header .container .row .header-right .left-QR p,
+#header .container .row .header-right .right-QR p {
+  color: #b93880;
+  font-weight: bolder;
+  font-size: 15px;
+}
+/*************************Logo-End**************************/
+/************************Footer-Start**************************/
+#footer .container {
+  height: 210px;
+}
+#footer .container .logo {
+  background: url("../images/logo.png") no-repeat center center;
+  -webkit-background-size: 160px 160px;
+  background-size: 160px 160px;
+  opacity: 0.5;
+  z-index: 1;
+}
+#footer .container .footer-left {
+  text-align: center;
+}
+#footer .container .footer-left p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #b93880;
+  padding-top: 5px;
+}
+#footer .container .footer-right .left-QR,
+#footer .container .footer-right .right-QR {
+  width: 150px;
+  height: 180px;
+  text-align: center;
+}
+#footer .container .footer-right .left-QR img,
+#footer .container .footer-right .right-QR img {
+  height: 130px;
+}
+#footer .container .footer-right .left-QR p,
+#footer .container .footer-right .right-QR p {
+  color: #b93880;
+  font-weight: bolder;
+  font-size: 18px;
+}
+/*************************Footer-End**************************/
+/*# sourceMappingURL=general-less.css.map */

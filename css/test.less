@@ -1,0 +1,91 @@
+@darkPink: #b93880;
+@lightPink: #ffa7ba;
+
+#lac{
+  margin-top: 50px;
+  height: 700px;
+  background-color: rgba(255, 167, 186, .2);
+  border-radius: 20px;
+  display: flex;
+  >a{
+    height: 100%;
+    margin-left: 50px;
+    .lac-right-title{
+      //margin: 0 auto;
+      margin: 165px 0;
+      width: 90px;
+      height: 360px;
+      background-color: @lightPink;
+      writing-mode: vertical-lr;
+      font-size: 36px;
+      font-weight: bolder;
+      letter-spacing: 42px;
+      color: @darkPink;
+      text-align: right;
+      line-height: 80px;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+      border: 5px dashed @darkPink;
+      border-radius: 50px;
+    }
+  }
+  .lac-items{
+    //display: inline;
+    //width: 83%;
+    //width: 950px;
+    .lac-items-top{
+      //height: 600px;
+      div{
+        //margin-top: 100px;
+        width: 270px;
+        height: 250px;
+        border-radius: 15px;
+        background-color: @lightPink;
+        overflow: hidden;
+        a{
+          overflow: hidden;
+          border: 1px solid rgba(185, 56, 128, .1);
+          box-sizing: border-box;
+          p{
+            text-align: center;
+            box-sizing: border-box;
+            font-size: 20px;
+            font-weight: bolder;
+            color: #fff;
+            letter-spacing: 2px;
+            margin-top: 10px;
+            //margin-top: 170px;
+          }
+          img{
+            height: 75%;
+            //vertical-align: center;
+          }
+        }
+        &:hover{
+          box-shadow: 0 0 6px rgba(185, 56, 128, .5);
+          transition: all linear 0.1s;
+        }
+      }
+    }
+    .lac-items-slogan{
+      margin-left: 100px;
+      span{
+        font-size: 20px;
+        font-weight: bold;
+        margin-right: 150px;
+        color: @lightPink;
+        text-shadow: 1px 1px 2px rgba(185, 56, 128, .8);
+        letter-spacing: 1px;
+        &:nth-child(4){
+          margin-left: 50px;
+        }
+        &:last-child{
+          margin-right: 0;
+        }
+      }
+      i{
+        display: block;
+        margin-top: 5px;
+      }
+    }
+  }
+}

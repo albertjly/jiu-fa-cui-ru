@@ -1,0 +1,430 @@
+@darkPink: #b93880;
+@lightPink: #ffa7ba;
+
+/************************Banner-Start**************************/
+#banner{
+  .container{
+    //height: 400px;
+    overflow: hidden;
+    border-radius: 5px;
+    position: relative;
+    #banner_content{
+      .banner_img{
+        position: absolute;
+      }
+      img{
+        cursor: pointer;
+        vertical-align: top;
+      }
+    }
+    #banner_control{
+      width: 100%;
+      height: 400px;
+      position: relative;
+      a{
+        width: 41px;
+        height: 100px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        margin: 0 20px 20px;
+        opacity: 0.3;
+        &.c-prev{
+          background: url("./../images/index.png") no-repeat 0 0;
+          left: 0;
+        }
+        &.c-next{
+          background: url("./../images/index.png") no-repeat -42px 0;
+          right: 0;
+        }
+      }
+    }
+    ul{
+      opacity: 0.4;
+      width: 120px;
+      height: 28px;
+      border-radius: 15px;
+      background-color: rgba(255, 255, 255, .5);
+      box-shadow: 1px 1px 5px rgba(185, 56, 128, .3);
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      justify-content: space-evenly;
+      li{
+        width: 15px;
+        height: 15px;
+        background-color: @lightPink;
+        border-radius: 50%;
+        margin: auto;
+        cursor: pointer;
+        &.current{
+          background-color: @darkPink;
+        }
+      }
+    }
+  }
+}
+
+/*************************Banner-End**************************/
+
+/************************Intro-Start**************************/
+#intro{
+  .container{
+    height: 450px;
+    .intro-container{
+      .intro-title{
+        img{
+          width: 80%;
+          display: block;
+          margin: 25px auto;
+        }
+      }
+      .intro-ap{
+        display: flex;
+
+        position: relative;
+        .intro-description{
+          p{
+            margin-left: 120px;
+            color: @darkPink;
+            &.article-title{
+              font-size: 32px;
+              font-weight: bolder;
+              margin-bottom: 20px;
+              padding-top: 20px;
+            }
+            &.article-body{
+              font-size: 18px;
+              margin-bottom: 5px;
+            }
+          }
+        }
+        img{
+          //height: 60%;
+          margin-left: 140px;
+          margin-top: 10px;
+        }
+        /*.bg-logo{
+          background: url("./../images/logo.png") no-repeat;
+          width: 1000px;
+          height: 1000px;
+          background-size: 150%;
+          opacity: .1;
+          position: absolute;
+          top: -500px;
+          right: 0;
+        }*/
+      }
+    }
+  }
+
+}
+/*************************Intro-End**************************/
+
+/************************Method-Descriptions-Start**************************/
+#m-des{
+  .container{
+    //height: 500px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding-top: 50px;
+    text-align: center;
+    a{
+      width: 460px;
+      height: 350px;
+      border-radius: 10px;
+      background-color: rgba(255, 167, 186, .2);
+      //border: 3px dashed rgba(185, 56, 128, .2);
+      overflow: hidden;
+      opacity: .8;
+      position: relative;
+      &.m-des-left{
+        margin-left: 10px;
+      }
+      &.m-des-right{
+        margin-right: 10px;
+      }
+      &:hover{
+        transform: scale(1.01, 1.01);
+        transition: all linear 0.2s;
+        box-shadow: 1px 1px 8px rgba(0, 0, 0, .1), 0 0 5px rgba(185, 56, 128, .5);
+        background-color: rgba(255, 167, 186, .3);
+        opacity: .9;
+      }
+      img{
+        height: 100%;
+        margin-bottom: 10px;
+      }
+      .m-des-title{
+        width: 100%;
+        font-size: 50px;
+        font-weight: bolder;
+        letter-spacing: 12px;
+        color: rgba(255, 255, 255, .9);
+        text-shadow: 2px 2px 10px rgba(185, 56, 128, .8);
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .m-des-content{
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        color: rgba(185, 56, 128, .9);
+        text-shadow: 1px 1px 2px rgba(255, 255, 255, .8);
+        font-size: 24px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        //text-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
+      }
+    }
+  }
+}
+/*************************Method-Descriptions-End**************************/
+
+/************************Lactagogue-Start**************************/
+#lac{
+  .container{
+    margin-top: 50px;
+    height: 600px;
+    background-color: rgba(255, 167, 186, .2);
+    border-radius: 20px;
+
+    position: relative;
+    .lac-right-title{
+      width: 100px;
+      height: 360px;
+      box-sizing: border-box;
+      border-radius: 50px;
+      background-color: @lightPink;
+      writing-mode: vertical-lr;
+      font-size: 36px;
+      font-weight: bolder;
+      letter-spacing: 42px;
+      color: @darkPink;
+      text-align: right;
+      line-height: 90px;
+      position: absolute;
+      top: 120px;
+      left: 55px;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+      border: 5px dashed @darkPink;
+    }
+    .lac-items{
+      position: relative;
+      .lac-items-top{
+        width: 750px;
+        height: 500px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-right: 40px;
+        margin-top: 40px;
+        a{
+          width: 30%;
+          height: 42%;
+          border-radius: 15px;
+          background-color: @lightPink;
+          overflow: hidden;
+          border: 1px solid rgba(185, 56, 128, .1);
+          img{
+            height: 75%;
+          }
+          p{
+            text-align: center;
+            font-size: 20px;
+            font-weight: bolder;
+            margin-top: 7px;
+            color: #fff;
+            letter-spacing: 2px;
+          }
+          &:hover{
+            box-shadow: 0 0 6px rgba(185, 56, 128, .5);
+            transition: all linear 0.1s;
+          }
+        }
+      }
+      .lac-items-slogan{
+        position: absolute;
+        top: 515px;
+        right: 80px;
+        span{
+          font-size: 20px;
+          font-weight: bold;
+          margin-right: 150px;
+          color: @lightPink;
+          text-shadow: 1px 1px 2px rgba(185, 56, 128, .8);
+          letter-spacing: 1px;
+          &:nth-child(4){
+            margin-left: 50px;
+          }
+          &:last-child{
+            margin-right: 0;
+          }
+        }
+        i{
+          display: block;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+}
+/*************************Lactagogue-End**************************/
+
+/************************Treatment-Start**************************/
+#treat{
+  .container{
+    height: 600px;
+    margin-top: 50px;
+    background-color: rgba(185, 56, 128, .1);
+    border-radius: 20px;
+    overflow: auto;
+    .treat-top{
+      margin: 50px auto;
+      box-sizing: border-box;
+      width: 360px;
+      height: 100px;
+      border-radius: 50px;
+      background-color: @darkPink;
+      text-align: right;
+      line-height: 90px;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+      border: 5px dashed @lightPink;
+      font-size: 36px;
+      font-weight: bolder;
+      color: @lightPink;
+      letter-spacing: 42px;
+    }
+    .treat-middle{
+      display: flex;
+      justify-content: space-evenly;
+      a{
+        display: inline-block;
+        width: 280px;
+        height: 280px;
+        background-color: @darkPink;
+        border-radius: 50%;
+        text-align: center;
+        overflow: hidden;
+        font-size: 20px;
+        font-weight: bolder;
+        letter-spacing: 2px;
+        color: #eee;
+        border: 1px solid rgba(255, 167, 186, 1);
+        img{
+          height: 75%;
+        }
+        span{
+          display: block;
+          margin-top: 5px;
+        }
+        &:hover{
+          box-shadow: 2px 2px 8px rgba(185, 56, 128, .5);
+          transition: all linear 0.2s;
+        }
+      }
+    }
+    .treat-bottom{
+      margin-top: 25px;
+      p{
+        font-size: 25px;
+        font-weight: bolder;
+        margin-bottom: 2px;
+        text-align: center;
+        color: @darkPink;
+        text-shadow: 2px 2px 10px rgba(255, 167, 186, .8);
+      }
+    }
+  }
+}
+/*************************Treatment-End**************************/
+
+/************************Effects-Start**************************/
+#eff{
+  .container{
+    //height: 700px;
+    background-color: rgba(255, 167, 186, .2);
+    margin: 50px auto;
+    border-radius: 20px;
+    overflow: auto;
+    .eff-title{
+      width: 250px;
+      height: 60px;
+      //text-align: center;
+
+      background-color: rgba(255, 167, 186, .5);
+      border-radius: 10px;
+      margin: 25px auto;
+      p{
+        height: 50px;
+        font-size: 36px;
+        font-weight: bolder;
+        color: @darkPink;
+        letter-spacing: 20px;
+        line-height: 60px;
+        margin-left: 24px;
+      }
+    }
+    .eff-body{
+      height: 450px;
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      .eff-items{
+        box-sizing: border-box;
+        //margin-right: 20px;
+        width: 435px;
+        height: 180px;
+        background-color: rgba(255, 167, 186, .3);
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px rgba(185, 56, 128, .3);
+        .eff-items-img{
+          width: 245px;
+          img{
+            border-radius: 5px;
+            width: 230px;
+            height: 150px;
+            margin: 15px 0 15px 15px;
+          }
+        }
+        .eff-items-des{
+          width: 190px;
+          text-align: center;
+          span{
+            font-size: 20px;
+            font-weight: bolder;
+            background-color: rgba(185, 56, 128, .6);
+            padding: 5px 8px;
+            display: inline-block;
+            border-radius: 10px;
+            letter-spacing: 3px;
+            color: #eeeeee;
+            margin-top: 30px;
+          }
+          p{
+            width: 140px;
+            //height: 200px;
+            font-size: 14px;
+            font-weight: normal;
+            color: rgba(185, 56, 128, .7);
+            line-height: 20px;
+            letter-spacing: 1px;
+            margin: 10px auto;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+}
+/*************************Effects-End**************************/

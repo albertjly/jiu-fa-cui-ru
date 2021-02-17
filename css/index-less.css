@@ -1,0 +1,389 @@
+/************************Banner-Start**************************/
+#banner .container {
+  overflow: hidden;
+  border-radius: 5px;
+  position: relative;
+}
+#banner .container #banner_content .banner_img {
+  position: absolute;
+}
+#banner .container #banner_content img {
+  cursor: pointer;
+  vertical-align: top;
+}
+#banner .container #banner_control {
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+#banner .container #banner_control a {
+  width: 41px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 20px 20px;
+  opacity: 0.3;
+}
+#banner .container #banner_control a.c-prev {
+  background: url("../images/index.png") no-repeat 0 0;
+  left: 0;
+}
+#banner .container #banner_control a.c-next {
+  background: url("../images/index.png") no-repeat -42px 0;
+  right: 0;
+}
+#banner .container ul {
+  opacity: 0.4;
+  width: 120px;
+  height: 28px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 1px 1px 5px rgba(185, 56, 128, 0.3);
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-evenly;
+}
+#banner .container ul li {
+  width: 15px;
+  height: 15px;
+  background-color: #ffa7ba;
+  border-radius: 50%;
+  margin: auto;
+  cursor: pointer;
+}
+#banner .container ul li.current {
+  background-color: #b93880;
+}
+/*************************Banner-End**************************/
+/************************Intro-Start**************************/
+#intro .container {
+  height: 450px;
+}
+#intro .container .intro-container .intro-title img {
+  width: 80%;
+  display: block;
+  margin: 25px auto;
+}
+#intro .container .intro-container .intro-ap {
+  display: flex;
+  position: relative;
+  /*.bg-logo{
+          background: url("./../images/logo.png") no-repeat;
+          width: 1000px;
+          height: 1000px;
+          background-size: 150%;
+          opacity: .1;
+          position: absolute;
+          top: -500px;
+          right: 0;
+        }*/
+}
+#intro .container .intro-container .intro-ap .intro-description p {
+  margin-left: 120px;
+  color: #b93880;
+}
+#intro .container .intro-container .intro-ap .intro-description p.article-title {
+  font-size: 32px;
+  font-weight: bolder;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+#intro .container .intro-container .intro-ap .intro-description p.article-body {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+#intro .container .intro-container .intro-ap img {
+  margin-left: 140px;
+  margin-top: 10px;
+}
+/*************************Intro-End**************************/
+/************************Method-Descriptions-Start**************************/
+#m-des .container {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding-top: 50px;
+  text-align: center;
+}
+#m-des .container a {
+  width: 460px;
+  height: 350px;
+  border-radius: 10px;
+  background-color: rgba(255, 167, 186, 0.2);
+  overflow: hidden;
+  opacity: 0.8;
+  position: relative;
+}
+#m-des .container a.m-des-left {
+  margin-left: 10px;
+}
+#m-des .container a.m-des-right {
+  margin-right: 10px;
+}
+#m-des .container a:hover {
+  transform: scale(1.01, 1.01);
+  transition: all linear 0.2s;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1), 0 0 5px rgba(185, 56, 128, 0.5);
+  background-color: rgba(255, 167, 186, 0.3);
+  opacity: 0.9;
+}
+#m-des .container a img {
+  height: 100%;
+  margin-bottom: 10px;
+}
+#m-des .container a .m-des-title {
+  width: 100%;
+  font-size: 50px;
+  font-weight: bolder;
+  letter-spacing: 12px;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 2px 2px 10px rgba(185, 56, 128, 0.8);
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#m-des .container a .m-des-content {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  color: rgba(185, 56, 128, 0.9);
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/*************************Method-Descriptions-End**************************/
+/************************Lactagogue-Start**************************/
+#lac .container {
+  margin-top: 50px;
+  height: 600px;
+  background-color: rgba(255, 167, 186, 0.2);
+  border-radius: 20px;
+  position: relative;
+}
+#lac .container .lac-right-title {
+  width: 100px;
+  height: 360px;
+  box-sizing: border-box;
+  border-radius: 50px;
+  background-color: #ffa7ba;
+  writing-mode: vertical-lr;
+  font-size: 36px;
+  font-weight: bolder;
+  letter-spacing: 42px;
+  color: #b93880;
+  text-align: right;
+  line-height: 90px;
+  position: absolute;
+  top: 120px;
+  left: 55px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  border: 5px dashed #b93880;
+}
+#lac .container .lac-items {
+  position: relative;
+}
+#lac .container .lac-items .lac-items-top {
+  width: 750px;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-right: 40px;
+  margin-top: 40px;
+}
+#lac .container .lac-items .lac-items-top a {
+  width: 30%;
+  height: 42%;
+  border-radius: 15px;
+  background-color: #ffa7ba;
+  overflow: hidden;
+  border: 1px solid rgba(185, 56, 128, 0.1);
+}
+#lac .container .lac-items .lac-items-top a img {
+  height: 75%;
+}
+#lac .container .lac-items .lac-items-top a p {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bolder;
+  margin-top: 7px;
+  color: #fff;
+  letter-spacing: 2px;
+}
+#lac .container .lac-items .lac-items-top a:hover {
+  box-shadow: 0 0 6px rgba(185, 56, 128, 0.5);
+  transition: all linear 0.1s;
+}
+#lac .container .lac-items .lac-items-slogan {
+  position: absolute;
+  top: 515px;
+  right: 80px;
+}
+#lac .container .lac-items .lac-items-slogan span {
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 150px;
+  color: #ffa7ba;
+  text-shadow: 1px 1px 2px rgba(185, 56, 128, 0.8);
+  letter-spacing: 1px;
+}
+#lac .container .lac-items .lac-items-slogan span:nth-child(4) {
+  margin-left: 50px;
+}
+#lac .container .lac-items .lac-items-slogan span:last-child {
+  margin-right: 0;
+}
+#lac .container .lac-items .lac-items-slogan i {
+  display: block;
+  margin-top: 5px;
+}
+/*************************Lactagogue-End**************************/
+/************************Treatment-Start**************************/
+#treat .container {
+  height: 600px;
+  margin-top: 50px;
+  background-color: rgba(185, 56, 128, 0.1);
+  border-radius: 20px;
+  overflow: auto;
+}
+#treat .container .treat-top {
+  margin: 50px auto;
+  box-sizing: border-box;
+  width: 360px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: #b93880;
+  text-align: right;
+  line-height: 90px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  border: 5px dashed #ffa7ba;
+  font-size: 36px;
+  font-weight: bolder;
+  color: #ffa7ba;
+  letter-spacing: 42px;
+}
+#treat .container .treat-middle {
+  display: flex;
+  justify-content: space-evenly;
+}
+#treat .container .treat-middle a {
+  display: inline-block;
+  width: 280px;
+  height: 280px;
+  background-color: #b93880;
+  border-radius: 50%;
+  text-align: center;
+  overflow: hidden;
+  font-size: 20px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  color: #eee;
+  border: 1px solid #ffa7ba;
+}
+#treat .container .treat-middle a img {
+  height: 75%;
+}
+#treat .container .treat-middle a span {
+  display: block;
+  margin-top: 5px;
+}
+#treat .container .treat-middle a:hover {
+  box-shadow: 2px 2px 8px rgba(185, 56, 128, 0.5);
+  transition: all linear 0.2s;
+}
+#treat .container .treat-bottom {
+  margin-top: 25px;
+}
+#treat .container .treat-bottom p {
+  font-size: 25px;
+  font-weight: bolder;
+  margin-bottom: 2px;
+  text-align: center;
+  color: #b93880;
+  text-shadow: 2px 2px 10px rgba(255, 167, 186, 0.8);
+}
+/*************************Treatment-End**************************/
+/************************Effects-Start**************************/
+#eff .container {
+  background-color: rgba(255, 167, 186, 0.2);
+  margin: 50px auto;
+  border-radius: 20px;
+  overflow: auto;
+}
+#eff .container .eff-title {
+  width: 250px;
+  height: 60px;
+  background-color: rgba(255, 167, 186, 0.5);
+  border-radius: 10px;
+  margin: 25px auto;
+}
+#eff .container .eff-title p {
+  height: 50px;
+  font-size: 36px;
+  font-weight: bolder;
+  color: #b93880;
+  letter-spacing: 20px;
+  line-height: 60px;
+  margin-left: 24px;
+}
+#eff .container .eff-body {
+  height: 450px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+#eff .container .eff-body .eff-items {
+  box-sizing: border-box;
+  width: 435px;
+  height: 180px;
+  background-color: rgba(255, 167, 186, 0.3);
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(185, 56, 128, 0.3);
+}
+#eff .container .eff-body .eff-items .eff-items-img {
+  width: 245px;
+}
+#eff .container .eff-body .eff-items .eff-items-img img {
+  border-radius: 5px;
+  width: 230px;
+  height: 150px;
+  margin: 15px 0 15px 15px;
+}
+#eff .container .eff-body .eff-items .eff-items-des {
+  width: 190px;
+  text-align: center;
+}
+#eff .container .eff-body .eff-items .eff-items-des span {
+  font-size: 20px;
+  font-weight: bolder;
+  background-color: rgba(185, 56, 128, 0.6);
+  padding: 5px 8px;
+  display: inline-block;
+  border-radius: 10px;
+  letter-spacing: 3px;
+  color: #eeeeee;
+  margin-top: 30px;
+}
+#eff .container .eff-body .eff-items .eff-items-des p {
+  width: 140px;
+  font-size: 14px;
+  font-weight: normal;
+  color: rgba(185, 56, 128, 0.7);
+  line-height: 20px;
+  letter-spacing: 1px;
+  margin: 10px auto;
+  text-align: left;
+}
+/*************************Effects-End**************************/
+/*# sourceMappingURL=index-less.css.map */

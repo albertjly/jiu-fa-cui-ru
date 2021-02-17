@@ -1,0 +1,84 @@
+@darkPink: #b93880;
+@lightPink: #ffa7ba;
+
+/************************Logo-Start**************************/
+#header{
+  .container .row{
+    height: 135px;
+    //background-color: red;
+    .header-left{
+      .logo-right{
+        .slogan{
+          color: @darkPink;
+          font-weight: bolder;
+          font-size: 16px;
+        }
+      }
+    }
+    .header-right{
+      .left-QR, .right-QR{
+        width: 120px;
+        height: 140px;
+        text-align: center;
+        img{
+          height: 90px;
+        }
+        p{
+          //margin-top: 5px;
+          color: @darkPink;
+          font-weight: bolder;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+/*************************Logo-End**************************/
+
+
+
+
+/************************Footer-Start**************************/
+#footer{
+  .container{
+    height: 210px;
+    .logo{
+      //background-color: red;
+      background: url("./../images/logo.png") no-repeat center center;
+      -webkit-background-size: 160px 160px;
+      background-size: 160px 160px;
+      opacity: 0.5;
+      z-index: 1;
+    }
+
+    .footer-left{
+      text-align: center;
+      //background-color: red;
+      //box-shadow: 1px 1px 4px rgba(185, 56, 128, .2);
+      //width: 1000px;
+      p{
+        font-size: 16px;
+        font-weight: bold;
+        color: @darkPink;
+        padding-top: 5px;
+      }
+    }
+    .footer-right{
+      //background-color: green;
+      .left-QR, .right-QR{
+        width: 150px;
+        height: 180px;
+        text-align: center;
+        img{
+          height: 130px;
+        }
+        p{
+          color: @darkPink;
+          font-weight: bolder;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+/*************************Footer-End**************************/

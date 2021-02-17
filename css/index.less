@@ -1,0 +1,443 @@
+@darkPink: #b93880;
+@lightPink: #ffa7ba;
+
+/*****************************nav-start*****************************/
+.navbar{
+  button{
+    color: #000;
+  }
+  .navbar-brand{
+    margin: 0 auto;
+    img{
+      //margin-right: 30px;
+      //opacity: 0.3;
+      }
+  }
+  .navbar-toggler, .navbar-brand{
+    //margin-top: -30px;
+  }
+}
+
+.navbar .navbar-nav{
+  .nav-item{
+    letter-spacing: 1px;
+    .nav-link{
+      //z-index: 99;
+      //background-color: red;
+      text-align: center;
+      height: 50px;
+      line-height: 50px;
+      background-color: rgba(180, 180, 180, .4);
+      border-radius: 10px;
+      font-weight: bolder;
+      color: @darkPink;
+      &:hover{
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+  .active .nav-link{
+    background-color: rgba(255, 167, 186, .6);
+  }
+}
+
+/******************************nav-end******************************/
+
+/*****************************carousel-start*****************************/
+#carouselExampleFade .carousel-indicators{
+  margin-bottom: 15px;
+}
+
+/******************************carousel-end******************************/
+
+/*****************************Introduction-start*****************************/
+#intro{
+  //height: 450px;
+  .intro-container{
+    margin: 0 auto;
+    .intro-title{
+      height: 200px;
+      background: url("./../images/chinese-characters.png") no-repeat center center;
+      -webkit-background-size: 80%;
+      background-size: 80%;
+    }
+    .intro-ap{
+      .intro-description{
+        margin: 0 auto;
+        p{
+          color: @darkPink;
+          padding: 3px;
+          letter-spacing: 1px;
+          &.article-title{
+            font-size: 32px;
+            font-weight: bolder;
+          }
+          &.article-body{
+            font-size: 18px;
+          }
+        }
+      }
+      img{
+        //height: 60%;
+        margin: 0 auto;
+      }
+      .intro-md{
+        //height: 100px;
+        color: @darkPink;
+        p{
+          padding: 3px;
+          &.article-title{
+            font-size: 22px;
+            font-weight: bolder;
+          }
+          &.article-body{
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/******************************Introduction-end******************************/
+
+/*****************************Method-Des-start*****************************/
+#m-des{
+  .row{
+    //width: 90%;
+    height: 220px;
+    margin: 0 auto;
+    a{
+      height: 100%;
+      text-align: center;
+      border-radius: 10px;
+      background-color: rgba(255, 167, 186, .2);
+      //border: 3px dashed rgba(185, 56, 128, .2);
+      //overflow: hidden;
+      position: relative;
+      &:hover{
+        transform: scale(1.01, 1.01);
+        transition: all linear 0.2s;
+        box-shadow: 1px 1px 8px rgba(0, 0, 0, .1), 0 0 5px rgba(185, 56, 128, .5);
+        background-color: rgba(255, 167, 186, .3);
+        opacity: .9;
+      }
+      img{
+        height: 100%;
+      }
+      p{
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        bottom: 20px;
+        transform: translateX(-50%);
+      }
+      .m-des-title{
+        font-size: 30px;
+        font-weight: bolder;
+        letter-spacing: 5px;
+        color: rgba(255, 255, 255, .9);
+        text-shadow: 2px 2px 10px rgba(185, 56, 128, .8);
+      }
+      .m-des-content{
+        //color: rgba(185, 56, 128, .9);
+        //text-shadow: 1px 1px 2px rgba(255, 255, 255, .8);
+        color: #ffffff;
+        //text-shadow: 2px 2px 5px rgba(185, 56, 128, .8);
+        background: rgb(185,56,128);
+        background: linear-gradient(90deg, rgba(185,56,128,0) 0%, rgba(185,56,128,1) 50%, rgba(185,56,128,0) 100%);
+        font-size: 16px;
+        //font-weight: bold;
+        letter-spacing: 2px;
+      }
+    }
+    .m-des-left{
+      background: url("./../images/m_des_01.jpg") no-repeat center center;
+      -webkit-background-size: cover;
+      background-size: cover;
+      opacity: .6;
+    }
+    .m-des-right{
+      background: url("./../images/m_des_02.jpg") no-repeat center center;
+      -webkit-background-size: cover;
+      background-size: cover;
+      opacity: .6;
+    }
+  }
+}
+
+@media (min-width: 576px){
+  #m-des > .row{
+    height: 120px;
+  }
+}
+
+@media (min-width: 768px){
+  #m-des > .row{
+    height: 200px;
+  }
+}
+
+/******************************Method-Des-end******************************/
+
+/*****************************Lactogenesis-start*****************************/
+#lac{
+  margin-top: 130px;
+  //height: 700px;
+  background-color: rgba(255, 167, 186, .2);
+  border-radius: 20px;
+  display: flex;
+  position: relative;
+  >a:nth-child(1){
+    height: 100%;
+    margin-left: 50px;
+    .lac-right-title{
+      //margin: 0 auto;
+      margin: 165px 0;
+      width: 90px;
+      height: 360px;
+      background-color: @lightPink;
+      writing-mode: vertical-lr;
+      font-size: 36px;
+      font-weight: bolder;
+      letter-spacing: 42px;
+      color: @darkPink;
+      text-align: right;
+      line-height: 80px;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+      border: 5px dashed @darkPink;
+      border-radius: 50px;
+    }
+  }
+  >a:nth-child(2){
+    height: 70px;
+    display: inline;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    //overflow: auto;
+    z-index: 999;
+    .lac-right-top-title{
+      //margin: 165px 0;
+      width: 280px;
+      height: 70px;
+      background-color: @lightPink;
+      font-size: 28px;
+      font-weight: bolder;
+      letter-spacing: 32px;
+      color: @darkPink;
+      text-align: right;
+      line-height: 60px;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+      border: 5px dashed @darkPink;
+      border-radius: 50px;
+    }
+  }
+  .lac-items{
+    //display: inline;
+    //width: 83%;
+    //width: 950px;
+    .lac-items-top{
+      //height: 600px;
+      .card-body{
+        padding: 0;
+      }
+      >div{
+        //margin-top: 100px;
+        width: 240px;
+        height: 230px;
+        border-radius: 15px;
+        background-color: @lightPink;
+        overflow: hidden;
+        a{
+          overflow: hidden;
+          border: 1px solid rgba(185, 56, 128, .1);
+          box-sizing: border-box;
+          p{
+            text-align: center;
+            box-sizing: border-box;
+            font-size: 20px;
+            font-weight: bolder;
+            color: #fff;
+            letter-spacing: 2px;
+            margin-top: 10px;
+            //margin-top: 170px;
+          }
+          img{
+            width: 100%;
+            //vertical-align: center;
+          }
+        }
+        &:hover{
+          box-shadow: 0 0 6px rgba(185, 56, 128, .5);
+          transition: all linear 0.1s;
+        }
+      }
+    }
+    .lac-items-slogan{
+      margin-left: 200px;
+      span{
+        font-size: 20px;
+        font-weight: bold;
+        margin-right: 150px;
+        color: @lightPink;
+        text-shadow: 1px 1px 2px rgba(185, 56, 128, .8);
+        letter-spacing: 1px;
+        &:nth-child(4){
+          margin-left: 50px;
+        }
+        &:last-child{
+          margin-right: 0;
+        }
+      }
+      i{
+        display: block;
+        margin-top: 5px;
+      }
+    }
+  }
+}
+
+/******************************Lactogenesis-end******************************/
+
+/*****************************Treatment-start*****************************/
+#treat{
+  .container{
+    //height: 600px;
+    background-color: rgba(185, 56, 128, .1);
+    border-radius: 20px;
+    overflow: auto;
+    .treat-top{
+      width: 360px;
+      height: 90px;
+      margin: 40px auto;
+      background-color: @darkPink;
+      //writing-mode: vertical-lr;
+      font-size: 36px;
+      font-weight: bolder;
+      letter-spacing: 42px;
+      text-align: right;
+      line-height: 80px;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+      border: 5px dashed @lightPink;
+      border-radius: 50px;
+      color: @lightPink;
+    }
+    .treat-top-small{
+      width: 280px;
+      height: 70px;
+      margin: 20px auto;
+      background-color: @darkPink;
+      //writing-mode: vertical-lr;
+      font-size: 28px;
+      font-weight: bolder;
+      letter-spacing: 32px;
+      text-align: right;
+      line-height: 60px;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+      border: 5px dashed @lightPink;
+      border-radius: 50px;
+      color: @lightPink;
+    }
+    .row{
+      .card{
+        width: 280px;
+        height: 280px;
+        background-color: @darkPink;
+        .card-body{
+          .card-title{
+            font-size: 20px;
+            font-weight: bolder;
+            color: #eee;
+          }
+        }
+      }
+    }
+    .treat-bottom{
+      margin-top: 25px;
+      p{
+        font-size: 25px;
+        font-weight: bolder;
+        margin-bottom: 2px;
+        text-align: center;
+        color: @darkPink;
+        text-shadow: 2px 2px 10px rgba(255, 167, 186, .8);
+      }
+    }
+  }
+}
+
+/******************************Treatment-end******************************/
+
+/*****************************Effects-start*****************************/
+#eff{
+  .container{
+    background-color: rgba(255, 167, 186, .2);
+    margin: 50px auto;
+    border-radius: 20px;
+    overflow: auto;
+    .eff-title{
+      width: 250px;
+      height: 60px;
+      //text-align: center;
+
+      background-color: rgba(255, 167, 186, .5);
+      border-radius: 10px;
+      margin: 25px auto;
+      p{
+        height: 50px;
+        font-size: 36px;
+        font-weight: bolder;
+        color: @darkPink;
+        letter-spacing: 20px;
+        line-height: 60px;
+        margin-left: 24px;
+      }
+    }
+    .card{
+      //width: 50%;
+      //height: 160px;
+      //height: 170px;
+      border-radius: 10px;
+      overflow: hidden;
+      background-color: rgba(255, 167, 186, .3);
+      .card-body{
+        color: @darkPink;
+        text-align: center;
+        padding: 15px;
+        overflow: hidden;
+        .card-title{
+          font-size: 20px;
+            font-weight: bolder;
+            background-color: rgba(185, 56, 128, .6);
+            padding: 5px 8px;
+            display: inline-block;
+            border-radius: 10px;
+            letter-spacing: 3px;
+            color: #eeeeee;
+            //margin-top: 30px;
+        }
+        .card-text{
+          font-size: 14px;
+          white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/******************************Effects-end******************************/
