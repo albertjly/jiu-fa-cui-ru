@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>首页-杨氏灸法催乳堂</title>
+    <title>杨氏灸法催乳堂 - 首页</title>
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/general-less.css">
     <link rel="stylesheet" href="./css/index.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
-    <script src="./js/index.js"></script>
-<body>
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/popper.js/dist/popper.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="./js/general.js"></script>
+<body class="overflow-auto">
     <div id="header"></div>
     <!--Navigation-->
     <div class="container">
@@ -27,26 +27,26 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                 <ul class="navbar-nav col-12 p-0">
                     <li class="nav-item col p-1 active">
-                        <a class="nav-link p-0" href="javascript:;">首&nbsp;&nbsp;&nbsp;&nbsp;页<span class="sr-only">(current)</span></a>
+                        <a class="nav-link p-0" href="./index.html">首&nbsp;&nbsp;&nbsp;&nbsp;页<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item col p-1">
-                        <a class="nav-link p-0" href="javascript:;">灸法催乳</a>
+                        <a class="nav-link p-0" href="./lactogenesis.html">灸法催乳</a>
                     </li>
                     <li class="nav-item col p-1">
-                        <a class="nav-link p-0" href="javascript:;">灸法调理</a>
+                        <a class="nav-link p-0" href="./treatment.html">灸法调理</a>
                     </li>
                     <li class="nav-item col p-1">
-                        <a class="nav-link p-0" href="javascript:;">知识讲堂</a>
+                        <a class="nav-link p-0" href="./information.html">知识讲堂</a>
                     </li>
                     <li class="nav-item col p-1">
-                        <a class="nav-link p-0" href="javascript:;">联系方式</a>
+                        <a class="nav-link p-0" href="./about.html">联系方式</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </div>
     <!--carousel-->
-    <div class="container">
+    <div class="container mt-3 mb-3 mt-sm-3 mb-sm-3 mt-md-0 mb-md-0">
         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleFade" data-slide-to="0" class="active"></li>
@@ -79,7 +79,7 @@
         </div>
     </div>
     <!--Introduction-->
-    <div id="intro" class="container mb-md-5 mb-sm-3 mt-3">
+    <div id="intro" class="container mt-4">
         <a href="javascript:;" class="intro-container row">
             <!--title-->
             <div class="intro-title col-12 d-none d-sm-none d-md-block"></div>
@@ -114,15 +114,19 @@
         </a>
     </div>
     <!--Method-Descriptions-->
-    <section id="m-des" class="container mt-2">
+    <section id="m-des" class="container">
         <div class="row justify-content-around">
-            <a href="javascript:;" class="m-des-left col-5 col-sm-5 col-md-5 float-left p-1">
-                <span class="m-des-title">灸法简介</span>
+            <a href="javascript:;" class="m-des-left col-5 col-sm-5 col-md-5 p-2 m-1">
+                <p class="m-des-title d-none d-sm-block">灸法简介</p>
+                <p class="m-des-title d-block d-sm-none">灸法</p>
+                <p class="m-des-title d-block d-sm-none">简介</p>
                 <p class="m-des-content d-md-block d-sm-none d-none">艾灸是我国医学史上的文化瑰宝<br>具有不同凡响的神奇功效</p>
 <!--                <img src="images/m_des_01.jpg" alt="">-->
             </a>
-            <a href="javascript:;" class="m-des-right col-5 col-sm-5 col-md-5 float-left p-2">
-                <span class="m-des-title">药饼简介</span>
+            <a href="javascript:;" class="m-des-right col-5 col-sm-5 col-md-5 p-2 m-1">
+                <p class="m-des-title d-none d-sm-block"">药饼简介</p>
+                <p class="m-des-title d-block d-sm-none">药饼</p>
+                <p class="m-des-title d-block d-sm-none">简介</p>
                 <p class="m-des-content d-md-block d-sm-none d-none">灸法催乳功效来自于特制中药饼<br>药饼不同调治相应疾病</p>
 <!--                <img src="images/m_des_02.jpg" alt="">-->
             </a>
@@ -131,7 +135,7 @@
 
 
     <!--Lactogenesis-->
-    <section id="lac" class="container p-0">
+    <section id="lac" class="container mt-4">
         <!--left-->
         <a href="javascript:;" class="d-none d-sm-none d-md-none d-lg-none d-xl-block">
             <div class="lac-right-title">灸法催乳</div>
@@ -144,7 +148,7 @@
         <div class="lac-items p-0 float-left">
             <div class="row">
                 <div class="row pt-5 pl-5 pr-5 lac-items-top justify-content-around ml-1 float-left">
-                    <div class="card overflow-hidden m-3">
+                    <div class="card overflow-hidden m-2 m-sm-2 m-md-2 m-lg-3">
                         <a href="javascript:;">
                             <img src="images/lactogenesis_01.jpg" alt="">
                             <div class="card-body">
@@ -152,7 +156,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="card overflow-hidden m-3">
+                    <div class="card overflow-hidden m-2 m-sm-2 m-md-2 m-lg-3">
                         <a href="javascript:;">
                             <img src="images/lactogenesis_02.jpg" alt="">
                             <div class="card-body">
@@ -160,7 +164,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="card overflow-hidden m-3">
+                    <div class="card overflow-hidden m-2 m-sm-2 m-md-2 m-lg-3">
                         <a href="javascript:;">
                             <img src="images/lactogenesis_03.jpg" alt="">
                             <div class="card-body">
@@ -168,7 +172,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="card overflow-hidden m-3">
+                    <div class="card overflow-hidden m-2 m-sm-2 m-md-2 m-lg-3">
                         <a href="javascript:;">
                             <img src="images/lactogenesis_04.jpg" alt="">
                             <div class="card-body">
@@ -176,7 +180,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="card overflow-hidden m-3">
+                    <div class="card overflow-hidden m-2 m-sm-2 m-md-2 m-lg-3">
                         <a href="javascript:;">
                             <img src="images/lactogenesis_05.jpg" alt="">
                             <div class="card-body">
@@ -184,7 +188,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="card overflow-hidden m-3">
+                    <div class="card overflow-hidden m-2 m-sm-2 m-md-2 m-lg-3">
                         <a href="javascript:;">
                             <img src="images/lactogenesis_06.jpg" alt="">
                             <div class="card-body">
@@ -206,69 +210,6 @@
             </div>
         </div>
     </section>
-<!--    <div id="lac" class="container p-0">-->
-<!--        &lt;!&ndash;left&ndash;&gt;-->
-<!--        <a href="javascript:;" class="d-none d-sm-none d-md-none d-lg-none d-xl-block">-->
-<!--            <div class="lac-right-title">灸法催乳</div>-->
-<!--        </a>-->
-
-<!--        &lt;!&ndash;on top&ndash;&gt;-->
-<!--        <a href="javascript:;" class="d-block d-sm-block d-md-block d-lg-block d-xl-none">-->
-<!--            <div class="lac-right-top-title">灸法催乳</div>-->
-<!--        </a>-->
-<!--        &lt;!&ndash;right&ndash;&gt;-->
-<!--        <div class="lac-items p-0">-->
-<!--            &lt;!&ndash;top&ndash;&gt;-->
-<!--            <div class="row p-0 lac-items-top col-12 justify-content-around mt-4 mt-lg-5 ml-1 float-left">-->
-<!--                <div class="m-3 col-lg-3 p-0">-->
-<!--                    <a href="javascript:;">-->
-<!--                        <img src="images/lactogenesis_01.jpg" alt="">-->
-<!--                        <p>生理性乳胀</p>-->
-<!--                    </a>-->
-<!--                </div>-->
-<!--                <div class="m-3 col-lg-3 p-0">-->
-<!--                    <a href="javascript:;">-->
-<!--                        <img src="images/lactogenesis_02.jpg" alt="">-->
-<!--                        <p>乳少，漏乳</p>-->
-<!--                    </a>-->
-<!--                </div>-->
-<!--                <div class="m-3 col-lg-3 p-0">-->
-<!--                    <a href="javascript:;">-->
-<!--                        <img src="images/lactogenesis_03.jpg" alt="">-->
-<!--                        <p>乳多涨痛</p>-->
-<!--                    </a>-->
-<!--                </div>-->
-<!--                <div class="m-3 col-lg-3 p-0">-->
-<!--                    <a href="javascript:;">-->
-<!--                        <img src="images/lactogenesis_04.jpg" alt="">-->
-<!--                        <p>乳汁淤积，乳房胀痛</p>-->
-<!--                    </a>-->
-<!--                </div>-->
-<!--                <div class="m-3 col-lg-3 p-0">-->
-<!--                    <a href="javascript:;">-->
-<!--                        <img src="images/lactogenesis_05.jpg" alt="">-->
-<!--                        <p>乳房包块</p>-->
-<!--                    </a>-->
-<!--                </div>-->
-<!--                <div class="m-3 col-lg-3 p-0">-->
-<!--                    <a href="javascript:;">-->
-<!--                        <img src="images/lactogenesis_06.jpg" alt="">-->
-<!--                        <p>急性乳腺炎</p>-->
-<!--                    </a>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            &lt;!&ndash;bottom&ndash;&gt;-->
-<!--            <a href="javascript:;" class="float-left d-lg-block d-md-none d-sm-none d-none mb-3">-->
-<!--                <div class="lac-items-slogan">-->
-<!--                    <span>让母乳多的 → 减少</span>-->
-<!--                    <span>让母乳少的 → 增多</span>-->
-<!--                    <i></i>-->
-<!--                    <span>让产后漏乳 → 止住</span>-->
-<!--                    <span>让淤积堵塞的乳腺管 → 畅通</span>-->
-<!--                </div>-->
-<!--            </a>-->
-<!--        </div>-->
-<!--    </div>-->
     <!--Treatment-->
     <section id="treat" class="mt-5">
         <div class="container clearfix">
@@ -289,7 +230,7 @@
                 <div class="card rounded-circle overflow-hidden mt-3 mb-3">
                     <a href="javascript:;">
                         <img src="images/treatment_01.jpg" alt="">
-                        <div class="card-body">
+                        <div class="card-body p-2">
                             <p class="card-title text-center">乳腺增生</p>
                         </div>
                     </a>
@@ -297,7 +238,7 @@
                 <div class="card rounded-circle overflow-hidden mt-3 mb-3">
                     <a href="javascript:;">
                         <img src="images/treatment_02.jpg" alt="">
-                        <div class="card-body">
+                        <div class="card-body p-2">
                             <p class="card-title text-center">宫寒、痛经</p>
                         </div>
                     </a>
@@ -305,7 +246,7 @@
                 <div class="card rounded-circle overflow-hidden mt-3">
                     <a href="javascript:;">
                         <img src="images/treatment_03.jpg" alt="">
-                        <div class="card-body">
+                        <div class="card-body p-2">
                             <p class="card-title text-center">子宫腺肌症</p>
                         </div>
                     </a>
