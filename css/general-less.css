@@ -24,6 +24,32 @@
   font-size: 15px;
 }
 /*************************Logo-End**************************/
+/*****************************nav-start*****************************/
+.navbar button {
+  color: #000;
+}
+.navbar .navbar-brand {
+  margin: 0 auto;
+}
+.navbar .navbar-nav .nav-item {
+  letter-spacing: 1px;
+}
+.navbar .navbar-nav .nav-item .nav-link {
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  background-color: rgba(180, 180, 180, 0.4);
+  border-radius: 10px;
+  font-weight: bolder;
+  color: #b93880;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.navbar .navbar-nav .active .nav-link {
+  background-color: rgba(255, 167, 186, 0.6);
+}
+/******************************nav-end******************************/
 /************************Footer-Start**************************/
 #footer .container {
   height: 210px;

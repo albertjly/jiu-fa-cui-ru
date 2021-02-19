@@ -1,51 +1,9 @@
 @darkPink: #b93880;
 @lightPink: #ffa7ba;
 
-/*****************************nav-start*****************************/
-.navbar{
-  button{
-    color: #000;
-  }
-  .navbar-brand{
-    margin: 0 auto;
-    img{
-      //margin-right: 30px;
-      //opacity: 0.3;
-      }
-  }
-  .navbar-toggler, .navbar-brand{
-    //margin-top: -30px;
-  }
-}
-
-.navbar .navbar-nav{
-  .nav-item{
-    letter-spacing: 1px;
-    .nav-link{
-      //z-index: 99;
-      //background-color: red;
-      text-align: center;
-      height: 50px;
-      line-height: 50px;
-      background-color: rgba(180, 180, 180, .4);
-      border-radius: 10px;
-      font-weight: bolder;
-      color: @darkPink;
-      &:hover{
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-      }
-    }
-  }
-  .active .nav-link{
-    background-color: rgba(255, 167, 186, .6);
-  }
-}
-
-/******************************nav-end******************************/
-
 /*****************************carousel-start*****************************/
 #carouselExampleFade .carousel-indicators{
-  margin-bottom: 15px;
+  //margin-bottom: 15px;
 }
 
 /******************************carousel-end******************************/
@@ -56,7 +14,7 @@
   .intro-container{
     margin: 0 auto;
     .intro-title{
-      height: 200px;
+      height: 120px;
       background: url("./../images/chinese-characters.png") no-repeat center center;
       -webkit-background-size: 80%;
       background-size: 80%;
@@ -103,9 +61,11 @@
 
 /*****************************Method-Des-start*****************************/
 #m-des{
+  margin-bottom: 50px;
+  margin-top: 50px;
   .row{
     //width: 90%;
-    height: 220px;
+    //height: 220px;
     margin: 0 auto;
     a{
       height: 100%;
@@ -126,16 +86,13 @@
         height: 100%;
       }
       p{
-        width: 100%;
-        position: absolute;
-        left: 50%;
-        bottom: 20px;
-        transform: translateX(-50%);
+
       }
       .m-des-title{
+        display: inline;
         font-size: 30px;
         font-weight: bolder;
-        letter-spacing: 5px;
+        letter-spacing: 10px;
         color: rgba(255, 255, 255, .9);
         text-shadow: 2px 2px 10px rgba(185, 56, 128, .8);
       }
@@ -149,6 +106,11 @@
         font-size: 16px;
         //font-weight: bold;
         letter-spacing: 2px;
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        bottom: 20px;
+        transform: translateX(-50%);
       }
     }
     .m-des-left{
@@ -166,15 +128,33 @@
   }
 }
 
+@media (min-width: 350px){
+  #m-des>.row{
+    height: 110px;
+  }
+}
+
 @media (min-width: 576px){
-  #m-des > .row{
-    height: 120px;
+  #m-des>.row{
+    height: 150px;
   }
 }
 
 @media (min-width: 768px){
-  #m-des > .row{
+  #m-des>.row{
     height: 200px;
+  }
+}
+
+@media (min-width: 992px){
+  #m-des>.row{
+    height: 250px;
+  }
+}
+
+@media (min-width: 1200px){
+  #m-des>.row{
+    height: 280px;
   }
 }
 
@@ -182,7 +162,7 @@
 
 /*****************************Lactogenesis-start*****************************/
 #lac{
-  margin-top: 130px;
+  //margin-top: 130px;
   //height: 700px;
   background-color: rgba(255, 167, 186, .2);
   border-radius: 20px;
@@ -244,7 +224,7 @@
       .card-body{
         padding: 0;
       }
-      >div{
+      .card{
         //margin-top: 100px;
         width: 240px;
         height: 230px;
@@ -300,6 +280,50 @@
   }
 }
 
+@media (min-width: 350px){
+  #lac{
+    padding-top: 70px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (min-width: 576px){
+  #lac{
+    padding-top: 70px;
+  }
+}
+
+@media (min-width: 768px){
+  #lac {
+    padding-top: 70px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  #lac{
+    .lac-items .lac-items-top .card{
+      width: 200px;
+      height: 180px;
+      a p{
+        font-size: 16px;
+        margin-top: 1px;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px){
+  #lac{
+    padding-top: 70px;
+  }
+}
+
+@media (min-width: 1200px){
+  #lac{
+    padding-top: 0;
+  }
+}
+
 /******************************Lactogenesis-end******************************/
 
 /*****************************Treatment-start*****************************/
@@ -351,6 +375,7 @@
             font-size: 20px;
             font-weight: bolder;
             color: #eee;
+            letter-spacing: 2px;
           }
         }
       }
@@ -367,6 +392,43 @@
       }
     }
   }
+}
+
+@media screen and (min-width: 350px){
+
+}
+
+@media screen and (max-width: 576px){
+  #treat .container .row .card{
+    width: 220px;
+    height: 220px;
+    img{
+      width: 100%;
+    }
+    .card-body{
+      .card-title{
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: 1px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px){
+
+}
+
+@media screen and (max-width: 768px){
+
+}
+
+@media screen and (min-width: 992px){
+
+}
+
+@media screen and (min-width: 1200px){
+
 }
 
 /******************************Treatment-end******************************/
@@ -410,25 +472,27 @@
         overflow: hidden;
         .card-title{
           font-size: 20px;
-            font-weight: bolder;
-            background-color: rgba(185, 56, 128, .6);
-            padding: 5px 8px;
-            display: inline-block;
-            border-radius: 10px;
-            letter-spacing: 3px;
-            color: #eeeeee;
-            //margin-top: 30px;
+          font-weight: bolder;
+          background-color: rgba(185, 56, 128, .6);
+          padding: 5px 8px;
+          display: inline-block;
+          border-radius: 10px;
+          letter-spacing: 3px;
+          color: #eeeeee;
+          //margin-top: 30px;
         }
         .card-text{
           font-size: 14px;
           white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+          overflow: hidden;
+          text-overflow: ellipsis;
         }
       }
     }
   }
 }
+
+
 
 
 

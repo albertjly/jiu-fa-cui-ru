@@ -1,40 +1,11 @@
-/*****************************nav-start*****************************/
-.navbar button {
-  color: #000;
-}
-.navbar .navbar-brand {
-  margin: 0 auto;
-}
-.navbar .navbar-nav .nav-item {
-  letter-spacing: 1px;
-}
-.navbar .navbar-nav .nav-item .nav-link {
-  text-align: center;
-  height: 50px;
-  line-height: 50px;
-  background-color: rgba(180, 180, 180, 0.4);
-  border-radius: 10px;
-  font-weight: bolder;
-  color: #b93880;
-}
-.navbar .navbar-nav .nav-item .nav-link:hover {
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-}
-.navbar .navbar-nav .active .nav-link {
-  background-color: rgba(255, 167, 186, 0.6);
-}
-/******************************nav-end******************************/
 /*****************************carousel-start*****************************/
-#carouselExampleFade .carousel-indicators {
-  margin-bottom: 15px;
-}
 /******************************carousel-end******************************/
 /*****************************Introduction-start*****************************/
 #intro .intro-container {
   margin: 0 auto;
 }
 #intro .intro-container .intro-title {
-  height: 200px;
+  height: 120px;
   background: url("../images/chinese-characters.png") no-repeat center center;
   -webkit-background-size: 80%;
   background-size: 80%;
@@ -72,8 +43,11 @@
 }
 /******************************Introduction-end******************************/
 /*****************************Method-Des-start*****************************/
+#m-des {
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
 #m-des .row {
-  height: 220px;
   margin: 0 auto;
 }
 #m-des .row a {
@@ -93,17 +67,11 @@
 #m-des .row a img {
   height: 100%;
 }
-#m-des .row a p {
-  width: 100%;
-  position: absolute;
-  left: 50%;
-  bottom: 20px;
-  transform: translateX(-50%);
-}
 #m-des .row a .m-des-title {
+  display: inline;
   font-size: 30px;
   font-weight: bolder;
-  letter-spacing: 5px;
+  letter-spacing: 10px;
   color: rgba(255, 255, 255, 0.9);
   text-shadow: 2px 2px 10px rgba(185, 56, 128, 0.8);
 }
@@ -113,6 +81,11 @@
   background: linear-gradient(90deg, rgba(185, 56, 128, 0) 0%, #b93880 50%, rgba(185, 56, 128, 0) 100%);
   font-size: 16px;
   letter-spacing: 2px;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
 }
 #m-des .row .m-des-left {
   background: url("../images/m_des_01.jpg") no-repeat center center;
@@ -126,9 +99,14 @@
   background-size: cover;
   opacity: 0.6;
 }
+@media (min-width: 350px) {
+  #m-des > .row {
+    height: 110px;
+  }
+}
 @media (min-width: 576px) {
   #m-des > .row {
-    height: 120px;
+    height: 150px;
   }
 }
 @media (min-width: 768px) {
@@ -136,10 +114,19 @@
     height: 200px;
   }
 }
+@media (min-width: 992px) {
+  #m-des > .row {
+    height: 250px;
+  }
+}
+@media (min-width: 1200px) {
+  #m-des > .row {
+    height: 280px;
+  }
+}
 /******************************Method-Des-end******************************/
 /*****************************Lactogenesis-start*****************************/
 #lac {
-  margin-top: 130px;
   background-color: rgba(255, 167, 186, 0.2);
   border-radius: 20px;
   display: flex;
@@ -192,19 +179,19 @@
 #lac .lac-items .lac-items-top .card-body {
   padding: 0;
 }
-#lac .lac-items .lac-items-top > div {
+#lac .lac-items .lac-items-top .card {
   width: 240px;
   height: 230px;
   border-radius: 15px;
   background-color: #ffa7ba;
   overflow: hidden;
 }
-#lac .lac-items .lac-items-top > div a {
+#lac .lac-items .lac-items-top .card a {
   overflow: hidden;
   border: 1px solid rgba(185, 56, 128, 0.1);
   box-sizing: border-box;
 }
-#lac .lac-items .lac-items-top > div a p {
+#lac .lac-items .lac-items-top .card a p {
   text-align: center;
   box-sizing: border-box;
   font-size: 20px;
@@ -213,10 +200,10 @@
   letter-spacing: 2px;
   margin-top: 10px;
 }
-#lac .lac-items .lac-items-top > div a img {
+#lac .lac-items .lac-items-top .card a img {
   width: 100%;
 }
-#lac .lac-items .lac-items-top > div:hover {
+#lac .lac-items .lac-items-top .card:hover {
   box-shadow: 0 0 6px rgba(185, 56, 128, 0.5);
   transition: all linear 0.1s;
 }
@@ -240,6 +227,42 @@
 #lac .lac-items .lac-items-slogan i {
   display: block;
   margin-top: 5px;
+}
+@media (min-width: 350px) {
+  #lac {
+    padding-top: 70px;
+    padding-bottom: 20px;
+  }
+}
+@media (min-width: 576px) {
+  #lac {
+    padding-top: 70px;
+  }
+}
+@media (min-width: 768px) {
+  #lac {
+    padding-top: 70px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #lac .lac-items .lac-items-top .card {
+    width: 200px;
+    height: 180px;
+  }
+  #lac .lac-items .lac-items-top .card a p {
+    font-size: 16px;
+    margin-top: 1px;
+  }
+}
+@media (min-width: 992px) {
+  #lac {
+    padding-top: 70px;
+  }
+}
+@media (min-width: 1200px) {
+  #lac {
+    padding-top: 0;
+  }
 }
 /******************************Lactogenesis-end******************************/
 /*****************************Treatment-start*****************************/
@@ -287,6 +310,7 @@
   font-size: 20px;
   font-weight: bolder;
   color: #eee;
+  letter-spacing: 2px;
 }
 #treat .container .treat-bottom {
   margin-top: 25px;
@@ -298,6 +322,20 @@
   text-align: center;
   color: #b93880;
   text-shadow: 2px 2px 10px rgba(255, 167, 186, 0.8);
+}
+@media screen and (max-width: 576px) {
+  #treat .container .row .card {
+    width: 220px;
+    height: 220px;
+  }
+  #treat .container .row .card img {
+    width: 100%;
+  }
+  #treat .container .row .card .card-body .card-title {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
 }
 /******************************Treatment-end******************************/
 /*****************************Effects-start*****************************/

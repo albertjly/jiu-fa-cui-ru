@@ -1,0 +1,134 @@
+/*****************************Description-start*****************************/
+#des .container img {
+  width: 100%;
+}
+/******************************Description-end******************************/
+/*****************************Projects-start*****************************/
+#projects .container .projects-left {
+  border: 2px dashed #b93880;
+  border-radius: 20px;
+}
+#projects .container .projects-left .projects-title {
+  font-size: 24px;
+  color: #b93880;
+  letter-spacing: 2px;
+  margin-left: 30px;
+  position: relative;
+  font-weight: bolder;
+}
+#projects .container .projects-left .projects-title p:nth-child(2) {
+  position: absolute;
+  top: 240px;
+  left: 0;
+}
+#projects .container .projects-left .projects-lists {
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+#projects .container .projects-left .projects-lists li {
+  height: 50px;
+  width: 95%;
+  background-color: #ddd;
+  border-radius: 25px;
+  margin: 10px auto;
+  position: relative;
+}
+#projects .container .projects-left .projects-lists li:nth-child(4) {
+  margin-top: 70px;
+}
+#projects .container .projects-left .projects-lists li:last-child {
+  margin-bottom: 30px;
+}
+#projects .container .projects-left .projects-lists li a {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  color: #666;
+}
+#projects .container .projects-left .projects-lists li a p {
+  line-height: 47px;
+  margin-left: 30px;
+  font-weight: bolder;
+}
+#projects .container .projects-left .projects-lists li a:hover {
+  font-size: large;
+}
+#projects .container .projects-left .projects-lists li a:hover p {
+  color: #b93880;
+}
+#projects .container .projects-left .projects-lists li a i {
+  width: 25px;
+  height: 25px;
+  background: url("../images/arrows-lightpink.png") no-repeat center center;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+#projects .container .projects-left .projects-lists li.current {
+  background-color: #ffa7ba;
+}
+#projects .container .projects-left .projects-lists li.current i {
+  background: url("../images/arrows-white.png") no-repeat center center;
+  background-color: #b93880;
+}
+#projects .container .projects-left .projects-lists li.current a {
+  color: #fff;
+  font-weight: bold;
+}
+#projects .projects-right {
+  border: 2px dashed #b93880;
+  border-radius: 20px;
+}
+#projects .projects-right .projects-contents-top .top-left {
+  font-size: 12px;
+  font-weight: bold;
+  color: #b93880;
+}
+#projects .projects-right .projects-contents-top .top-left a {
+  color: #b93880;
+}
+#projects .projects-right .projects-contents-top .top-left div {
+  display: inline;
+  color: #ffa7ba;
+}
+#projects .projects-right .projects-contents-article {
+  width: 60%;
+  height: 100%;
+  margin: 30px auto;
+  display: none;
+}
+#projects .projects-right .projects-contents-article.current {
+  display: block;
+}
+#projects .projects-right .projects-contents-article .article-title {
+  font-size: 48px;
+  font-weight: bolder;
+  color: #b93880;
+  text-align: center;
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+}
+#projects .projects-right .projects-contents-article .article-content {
+  font-size: 14px;
+  text-indent: 2em;
+  line-height: 1.5em;
+  text-align: center;
+  letter-spacing: 1px;
+}
+#projects .projects-right .projects-contents-article .article-content p {
+  margin: 10px auto;
+  text-align: left;
+}
+#projects .projects-right .projects-contents-article .article-content img {
+  width: 60%;
+  margin: 10px auto;
+}
+/******************************Projects-end******************************/
+/*# sourceMappingURL=lac.css.map */

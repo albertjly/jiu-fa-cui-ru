@@ -1,0 +1,154 @@
+@darkPink: #b93880;
+@lightPink: #ffa7ba;
+
+/*****************************Description-start*****************************/
+#des{
+  .container{
+    img{
+      width: 100%;
+    }
+  }
+}
+
+/******************************Description-end******************************/
+
+/*****************************Projects-start*****************************/
+#projects{
+  .container{
+    .projects-left{
+      //background-color: red;
+      border: 2px dashed @darkPink;
+      border-radius: 20px;
+      .projects-intro{
+        //width: 100%;
+      }
+      .projects-title{
+        font-size: 24px;
+        color: @darkPink;
+        letter-spacing: 2px;
+        margin-left: 30px;
+        position: relative;
+        font-weight: bolder;
+        p:nth-child(2){
+          position: absolute;
+          top: 240px;
+          left: 0;
+        }
+      }
+      .projects-lists{
+        font-size: 17px;
+        letter-spacing: 1px;
+        li{
+          height: 50px;
+          width: 95%;
+          background-color: #ddd;
+          border-radius: 25px;
+          margin: 10px auto;
+          position: relative;
+          &:nth-child(4){
+            margin-top: 70px;
+          }
+          &:last-child{
+            margin-bottom: 30px;
+          }
+          a{
+            display: inline-block;
+            height: 100%;
+            width: 100%;
+            color: #666;
+            p{
+              line-height: 47px;
+              margin-left: 30px;
+              font-weight: bolder;
+            }
+            &:hover{
+              font-size: large;
+              p{
+                color: @darkPink;
+              }
+            }
+            i{
+              width: 25px;
+              height: 25px;
+              background: url("./../images/arrows-lightpink.png") no-repeat center center;
+              background-color: rgba(255, 255, 255, 0.4);
+              border-radius: 50%;
+              position: absolute;
+              top: 50%;
+              right: 15px;
+              -webkit-transform: translateY(-50%);
+              -moz-transform: translateY(-50%);
+              -ms-transform: translateY(-50%);
+              -o-transform: translateY(-50%);
+              transform: translateY(-50%);
+            }
+          }
+
+          &.current{
+            background-color: @lightPink;
+            i{
+              background: url("./../images/arrows-white.png") no-repeat center center;
+              background-color: @darkPink;
+            }
+            a{
+              color: #fff;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
+  .projects-right{
+    border: 2px dashed @darkPink;
+    border-radius: 20px;
+    .projects-contents-top{
+      .top-left{
+        font-size: 12px;
+        font-weight: bold;
+        color: @darkPink;
+        a{
+          color: @darkPink;
+        }
+        div{
+          display: inline;
+          color: @lightPink;
+        }
+      }
+    }
+    .projects-contents-article{
+      width: 60%;
+      height: 100%;
+      margin: 30px auto;
+      display: none;
+      &.current{
+        display: block;
+      }
+      .article-title{
+        font-size: 48px;
+        font-weight: bolder;
+        //font-weight: bolder;
+        color: @darkPink;
+        text-align: center;
+        letter-spacing: 5px;
+        margin-bottom: 20px;
+      }
+      .article-content{
+        font-size: 14px;
+        text-indent: 2em;
+        line-height: 1.5em;
+        text-align: center;
+        letter-spacing: 1px;
+        p{
+          margin: 10px auto;
+          text-align: left;
+        }
+        img{
+          width: 60%;
+          margin: 10px auto;
+        }
+      }
+    }
+  }
+}
+/******************************Projects-end******************************/

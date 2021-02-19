@@ -35,6 +35,47 @@
 }
 /*************************Logo-End**************************/
 
+/*****************************nav-start*****************************/
+.navbar{
+  button{
+    color: #000;
+  }
+  .navbar-brand{
+    margin: 0 auto;
+    img{
+      //margin-right: 30px;
+      //opacity: 0.3;
+      }
+  }
+  .navbar-toggler, .navbar-brand{
+    //margin-top: -30px;
+  }
+}
+
+.navbar .navbar-nav{
+  .nav-item{
+    letter-spacing: 1px;
+    .nav-link{
+      //z-index: 99;
+      //background-color: red;
+      text-align: center;
+      height: 50px;
+      line-height: 50px;
+      background-color: rgba(180, 180, 180, .4);
+      border-radius: 10px;
+      font-weight: bolder;
+      color: @darkPink;
+      &:hover{
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+  .active .nav-link{
+    background-color: rgba(255, 167, 186, .6);
+  }
+}
+
+/******************************nav-end******************************/
 
 
 
